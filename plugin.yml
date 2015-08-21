@@ -1,0 +1,4 @@
+name: AppleCooldown
+main: fr.just2craft.plugins.applecooldown.AppleCooldown
+version: 1.0
+commands:

@@ -1,0 +1,7 @@
+#Temps d'attente entre deux pomme de Notch en secondes
+cooldown: 10
+
+messages:
+  onCooldown: "§c[§4!§c]§6 Vous ne pouvez pas manger d'autre pomme de Notch avant §4%t% §6secondes!"
+  cooldown: "§c[§4!§c]§6 Vous ne pourrez manger une autre pomme de Notch que dans §4%t% §6secondes!"
+  endCooldown: "§c[§4!§c]§2 Vous pouvez à nouveau manger une pomme de Notch!"
