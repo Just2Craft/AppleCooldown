@@ -1,4 +1,8 @@
 name: AppleCooldown
 main: fr.just2craft.plugins.applecooldown.AppleCooldown
 version: 1.0
+website: http://just2craft.fr/
+authors: [basilicgeant, fabien91]
 commands:
+    applecooldown:
+        description: Commande Principal
