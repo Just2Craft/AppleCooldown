@@ -10,6 +10,8 @@ import org.bukkit.event.player.PlayerItemConsumeEvent;
 import org.bukkit.plugin.Plugin;
 
 public class AppleListener implements Listener {
+	
+	public static int tacheapple;
 
 	Plugin plugin = Bukkit.getServer().getPluginManager().getPlugin("AppleCooldown");
 	FileConfiguration config = Bukkit.getServer().getPluginManager().getPlugin("AppleCooldown").getConfig();
@@ -27,7 +29,7 @@ public class AppleListener implements Listener {
 			else {
 				cooldownList.put(e.getPlayer().getName(), System.currentTimeMillis());
 				e.getPlayer().sendMessage(config.getString("messages.cooldown").replace("%t%",Integer.toString(config.getInt("cooldown"))));
-				Bukkit.getScheduler().scheduleSyncDelayedTask(AppleListener.this.plugin, new Runnable() {
+				tacheapple = Bukkit.getScheduler().scheduleSyncDelayedTask(AppleListener.this.plugin, new Runnable() {
 					public void run() {
 						cooldownList.remove(e.getPlayer().getName());
 						//On vérifie que le joueur ne s'est pas déconnecté entre temps.
